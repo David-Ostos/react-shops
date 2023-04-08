@@ -1,0 +1,87 @@
+@import './vars';
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+}
+
+nav{
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid $very-light;
+}
+
+.menu{
+  display: none;
+}
+
+.logo-nav{
+  width: 140px;
+}
+
+.navbar-left{
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a{
+  text-decoration: none;
+  color: $very-light;
+  border: 1.5px solid $light;
+  padding: .3rem .8rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.navbar-left ul li a:hover{
+  border: 1.5px solid $hospital;
+  color: $hospital;
+}
+
+.navbar-right ul{
+  font-weight: 300;
+  gap: 2rem;
+}
+
+.navbar-shopping-cart{
+  position: relative;
+}
+
+.navbar-shopping-cart div{
+  position: absolute;
+  top: -6px;
+  right: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  background-color: $hospital;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 640px){
+  .menu{
+    display: block;
+  }
+  .navbar-left ul{
+    display: none;
+  }
+  .navbar-email{
+    display: none;
+  }
+} 
