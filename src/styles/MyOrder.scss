@@ -1,0 +1,71 @@
+@import 'vars';
+
+.order-title{
+  font-size: $lg;
+  margin-bottom: 40px;
+}
+
+.my-order-content{
+  p{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+  .order{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: $text-input;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+  }
+  
+  .order p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .order p span:nth-child(1){
+    font-size: $md;
+  }
+  
+  .order p span:nth-child(2){
+    font-size: $sm;
+    color: $very-light;
+  }
+  
+  
+  .order p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+  }
+  
+}
+
+
+.MyOrderItem{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+
+}
+
+.MyOrderItem img{
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.MyOrderItem p:nth-child(2){
+color: $very-light;
+}
+
+.MyOrderItem p:nth-child(3){
+  font-size: $md;
+  font-weight: bold;
+}

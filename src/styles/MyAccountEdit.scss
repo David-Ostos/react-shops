@@ -1,0 +1,27 @@
+.input-name,
+.input-email,
+.input-password{
+  margin-bottom: 22px;
+}
+
+.edit-button{
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 640px){
+  .logo{
+    display: block;
+  }
+  .login{
+    place-items: start center;
+    margin-top: 2rem;
+  }
+  .title{
+    margin-bottom: 40px;
+  }
+  .edit-button{
+    position: absolute;
+    bottom: 2rem;
+  }
+}

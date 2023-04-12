@@ -1,0 +1,11 @@
+@import 'vars';
+
+@media (max-width: 640px){
+  .logo{
+    display: block;
+  }
+  .signup-button{
+    position: absolute;
+    bottom: 2rem;
+  }
+}

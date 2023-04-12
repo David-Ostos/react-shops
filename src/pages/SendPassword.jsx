@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/RecoveryPassword.scss';
+import '../styles/SendPassword.scss';
 import logo from '../../public/asset/logos/logo_yard_sale.svg';
 import iconEmail from '../../public/asset/icons/email.svg';
 
-const RecoveryPassword = () => {
+const SendPassword = () => {
   return (
     <div className="login">
-      <div className="form-container">
+      <div className="form-container container-recovery">
         <img src={logo} alt="logo" className="logo" />
         <h1 className="title">Email has been sent</h1>
         <p className="subtitle">
@@ -20,7 +20,7 @@ const RecoveryPassword = () => {
         </div>
         <button className="primary-button login-button">Login</button>
         <p className="resend">
-          <span>Didn&#39t receive the email?</span>
+          <span>Didn&#39;t receive the email?</span>
           <a href="./">Resend</a>
         </p>
       </div>
@@ -28,4 +28,4 @@ const RecoveryPassword = () => {
   );
 };
 
-export default RecoveryPassword;
+export default SendPassword;
