@@ -1,5 +1,5 @@
 import React from 'react';
-import iClose from '../../public/asset/icons/icon_close.png';
+import iClose from '@icons/icon_close.png';
 
 const OrderItem = () => {
   return (

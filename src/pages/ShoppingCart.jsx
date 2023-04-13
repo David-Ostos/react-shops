@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/ShoppingCart.scss';
-import flecha from '../../public/asset/icons/flecha left.png';
-import OrderItem from '../components/OrderItem';
+import '@styles/ShoppingCart.scss';
+import flecha from '@icons/flecha left.png';
+import OrderItem from '@components/OrderItem';
 
 const ShoppingCart = () => {
   return (

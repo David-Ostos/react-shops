@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/ProductInfo.scss';
-import iClose from '../../public/asset/icons/icon_close.png';
-import addCart from '../../public/asset/icons/bt_add_to_cart.svg';
+import '@styles/ProductInfo.scss';
+import iClose from '@icons/icon_close.png';
+import addCart from '@icons/bt_add_to_cart.svg';
 
 const ProductInfo = () => {
   return (

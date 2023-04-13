@@ -1,5 +1,5 @@
 import React from 'react';
-import flechita from '../../public/asset/icons/flechita.svg';
+import flechita from '@icons/flechita.svg';
 
 const Orders = () => {
   return (

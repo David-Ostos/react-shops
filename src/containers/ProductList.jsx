@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/ProductList.scss';
-import ProductIem from '../components/ProductIem';
+import '@styles/ProductList.scss';
+import ProductIem from '@components/ProductIem';
 
 const HomeShop = () => {
   return (

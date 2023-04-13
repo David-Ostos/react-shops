@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/CreatePassword.scss';
-import logo from '../../public/asset/logos/logo_yard_sale.svg';
+import '@styles/CreatePassword.scss';
+import logo from '@logos/logo_yard_sale.svg';
 
 const CreatePassword = () => {
   return (

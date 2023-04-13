@@ -1,5 +1,5 @@
 import React from 'react';
-import addCart from '../../public/asset/icons/bt_add_to_cart.svg';
+import addCart from '@icons/bt_add_to_cart.svg';
 
 const ProductIem = () => {
   return (

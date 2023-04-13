@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/SendPassword.scss';
-import logo from '../../public/asset/logos/logo_yard_sale.svg';
-import iconEmail from '../../public/asset/icons/email.svg';
+import '@styles/SendPassword.scss';
+import logo from '@logos/logo_yard_sale.svg';
+import iconEmail from '@icons/email.svg';
 
 const SendPassword = () => {
   return (
