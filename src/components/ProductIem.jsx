@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import addCart from '@icons/bt_add_to_cart.svg';
 
 const ProductIem = () => {
-  const [cart, setCart] = useState('');
+  // eslint-disable-next-line no-unused-vars
+  const [cart, setCart] = useState([]);
 
   const handleClick = () => {
-    setCart('Hola mundo');
+    setCart([]);
   };
 
   return (
@@ -21,7 +22,6 @@ const ProductIem = () => {
         <figure onClick={handleClick}>
           <img src={addCart} />
         </figure>
-        {cart}
       </div>
     </div>
   );
