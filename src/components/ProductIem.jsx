@@ -1,25 +1,28 @@
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+
+import React, { useContext } from 'react';
 import addCart from '@icons/bt_add_to_cart.svg';
+import AppContext from '@context/AppContext';
 
-const ProductIem = () => {
-  // eslint-disable-next-line no-unused-vars
-  const [cart, setCart] = useState([]);
+const ProductIem = ({ product }) => {
+  const { addToCart } = useContext(AppContext);
 
-  const handleClick = () => {
-    setCart([]);
+  const handleClick = item => {
+    addToCart(item);
   };
 
   return (
     <div className="product-card">
       <figure className="product-img">
-        <img src="https://images.pexels.com/photos/2686914/pexels-photo-2686914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt className="product-card" />
+        <img src={product.images[0]} alt={product.title} className="product-card" />
       </figure>
       <div className="product-info">
         <div>
-          <p>$ 120,00</p>
-          <p> Round sheif</p>
+          <p>${product.price}</p>
+          <p>{product.title}</p>
         </div>
-        <figure onClick={handleClick}>
+        <figure onClick={() => handleClick(product)}>
           <img src={addCart} />
         </figure>
       </div>
