@@ -59,7 +59,7 @@ const Header = () => {
       <div className="navbar-right">
         <ul>
           <li className="navbar-email" onClick={handleToggle}>
-            platzi@example.com</li>
+            platzi@example.com <i className="fa-solid fa-sort-down" style={{ color: '#acd9b2' }} /></li>
           <li className="navbar-shopping-cart" onClick={() => setToaggleOrders(!toaggleOrders)}>
             <img src={iconShopping} alt="shopping car" />
             { state.cart.length > 0 && <div>{ state.cart.length > 9 ? '+9' : state.cart.length }</div> }
