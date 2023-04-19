@@ -19,6 +19,13 @@ p{
   figure img{
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
+  }
+  .add-to-cart{
+    transition: all 300ms ease-in-out;
+  }
+  .add-to-cart:hover{
+  transform: scale(1.20);
   }
 }
 .product-img img{

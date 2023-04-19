@@ -57,6 +57,7 @@ nav{
 
 .navbar-shopping-cart{
   position: relative;
+  cursor: pointer;
 }
 
 .navbar-shopping-cart div{
@@ -72,6 +73,10 @@ nav{
   border-radius: 50%;
   font-size: 10px;
   font-weight: bold;
+}
+
+.navbar-email{
+  cursor: pointer;
 }
 
 @media (max-width: 1000px){

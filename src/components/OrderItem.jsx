@@ -1,14 +1,15 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import iClose from '@icons/icon_close.png';
 
-const OrderItem = () => {
+const OrderItem = ({ product }) => {
   return (
     <div className="shopping-carts">
       <figure>
-        <img src="https://images.pexels.com/photos/2686914/pexels-photo-2686914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt />
+        <img src={product.images[0]} alt={product.title} />
       </figure>
-      <p>super love</p>
-      <p>$ 120.00</p>
+      <p>{product.title}</p>
+      <p>$ {product.price}</p>
       <img src={iClose} alt="close" />
     </div>
   );
