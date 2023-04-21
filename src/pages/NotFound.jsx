@@ -3,10 +3,11 @@ import '@styles/NotFount.scss';
 
 const NotFound = () => {
   return (
-    <div className='cart-404 wobble-horizontal-top'>
-      No encontrado, error 404.
+    <div className='not-found'>
+      <div className='cart-404 wobble-horizontal-top'>
+        <p>No encontrado, error 404.</p>
+      </div>
     </div>
-
   );
 };
 

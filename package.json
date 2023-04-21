@@ -10,7 +10,8 @@
   "homepage": "git@github.com:David-Ostos/react-shop.git#readme",
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "homepage": "https://david-ostos.github.io/react-shops/"
   },
   "keywords": [
     "react",

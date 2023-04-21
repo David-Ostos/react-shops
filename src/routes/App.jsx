@@ -22,7 +22,7 @@ const App = () => {
       <BrowserRouter>
         <Layout>
           <Routes>
-            <Route path='/react-shops' element={< Home />} />
+            <Route path='/' element={< Home />} />
             <Route path='/login' element={< Login />} />
             <Route path='/password-recovery' element={< PasswordRecovery />} />
             <Route path='/send-password' element={ < SendPassword />} />
