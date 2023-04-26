@@ -4,8 +4,11 @@ import '@styles/ShoppingCart.scss';
 import flecha from '@icons/flecha left.png';
 import OrderItem from '@components/OrderItem';
 
-const ShoppingCart = () => {
+const ShoppingCart = (props) => {
   const { state } = useContext(AppContext);
+
+  // eslint-disable-next-line react/prop-types
+  const { toggleOrders, setToggleOrders } = props; // se destructura el props para poder utilizarlo
 
   const sumTotal = () => {
     const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
@@ -18,7 +21,7 @@ const ShoppingCart = () => {
       <div className="my-order-container-shopping">
         <div className="my-order-container-title-shopping">
           <figure>
-            <img src={flecha} alt />
+            <i className="fa-solid fa-arrow-left flechita" onClick={() => setToggleOrders(!toggleOrders)}></i>
           </figure>
           <h1 className="title-shopping">Shopping cart</h1>
         </div>

@@ -9,26 +9,12 @@ import AppContext from '../context/AppContext';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  const [toaggleOrders, setToaggleOrders] = useState(false);
+  const [toggleOrders, setToggleOrders] = useState(false);
   const { state } = useContext(AppContext);
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
-
-  /*   const verifyCart = (cartNumber) => {
-    if (cartNumber && (cartNumber <= 9)) {
-      return (
-        <div>{cartNumber}</div>
-      );
-    } else if (cartNumber > 9) {
-      return (
-        <div>+9</div>
-      );
-    } else {
-      return null;
-    }
-  }; */
 
   return (
     <nav>
@@ -60,14 +46,14 @@ const Header = () => {
         <ul>
           <li className="navbar-email" onClick={handleToggle}>
             platzi@example.com <i className="fa-solid fa-sort-down" style={{ color: '#acd9b2' }} /></li>
-          <li className="navbar-shopping-cart" onClick={() => setToaggleOrders(!toaggleOrders)}>
+          <li className="navbar-shopping-cart" onClick={() => setToggleOrders(!toggleOrders)}>
             <img src={iconShopping} alt="shopping car" />
             { state.cart.length > 0 && <div>{ state.cart.length > 9 ? '+9' : state.cart.length }</div> }
           </li>
         </ul>
       </div>
       {toggle && <HomeMenu/>}
-      {toaggleOrders && <ShoppingCart/>}
+      {toggleOrders && <ShoppingCart toggleOrders={toggleOrders} setToggleOrders={setToggleOrders}/>}
     </nav>
   );
 };
